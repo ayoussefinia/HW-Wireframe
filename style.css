@@ -19,6 +19,12 @@ body {
   
 }
 
+.navalign {
+  width: 100%;
+  height:100px;
+  margin-bottom: 17px;
+}
+
 .aligner {
   display: flex;
   align-items: center;
@@ -34,19 +40,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: grey;
+  background:#777777;
   height: 300px;
-  margin-top: 20px;
+  margin-top: 0;
   overflow: hidden;
 }
 
 .left {
-
  text-align: center;
  width: 495px;
  height: 100%;
  background: #ebebeb;
- padding-top: 30px;
+ position: relative;
+ /* padding-top: 30px; */
+}
+
+.sectiontitle {
+  display: block;
+  width: 100%;
+  margin:auto;
+  position: absolute;
+  top: 35px;
 }
 
 .translate {
@@ -54,71 +68,109 @@ body {
   transform: translateY(20px);
 }
 .article {
-  display: flex;
+  display: block;
+  /* margin: auto; */
+  position: absolute;
+  width: 100%;
+  bottom:10px; 
+  height:68%;
+  /* display: flex;
   align-items: flex-end;
   justify-content: center;
   width:100%;
   height:70%;
-  
+   */
 }
 
 .articlein {
 
-  width: 95%;
-  height: 95%;
-  background: gray;
+  width: 96%;
+  height: 100%;
+  display: block;
+  margin:auto;
   position: relative;
-  transform: translateY(43px);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  background: gray;
+
+}
+
+.articletitle {
+  /* padding-top: 15px; */
+  width: 100%;
+  position: absolute;
+  top: 23px;
+  color: #ebebeb;
 }
 
 .divarticlein {
   /* margin: 0; */
+  /* padding-bottom: 20px; */
+ 
   width: 100%;
-  height: 66%;
-  background: #777;
-}
-  /* display: flex;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  background: #7777777;
+  display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
+
+.textcontainer{
+  display: block;
+  margin: auto;
+  width:91.5%;
+  height:89%;
+  position: absolute;
+  bottom: 15px;
+}
 
 .hdiv {
-  width: 95%;
-  height: 35%;
+  position: absolute;
+  top:0;
+  /* display:block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 47%;
   background: #ebebeb;
   margin: auto;
-  margin-top: 10px;
+  
+  /* margin-top: 18px; */
+}
+
+.hdivvertical {
+
 }
 
 .inline {
   margin: 0;
   display: inline-block;
-  position: relative;
-  transform: translateY(15px);
 }
 
 .pdiv {
-  width: 95%;
-  height: 35%;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 47%;
   background: #ebebeb;
-  margin: auto;
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  /* margin-top: 0px;
   vertical-align: center;
+   */
 }
 
-.vertical {
-  position: relative;
-  transform: translateY(12px);
-}
+
 .right {
   width: 445px;
   height: 100%;
   align-self: flex-end;
   background: #ebebeb;
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  /* position: relative; */
 }
 
 .aside {
@@ -126,9 +178,17 @@ body {
   align-items: flex-start;
   justify-content: center;
   height: 100%;
+  width:100%;
+  position: relative;
 }
 
-
+.asidetext {
+  display:block;
+  text-align: center;
+  width:100%;
+  position:absolute;
+  top:40px
+}
 
 
 /* .a {
